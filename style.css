@@ -1,0 +1,270 @@
+
+a{
+    cursor: pointer;
+}
+
+a.button{
+    padding: 10px 15px;
+    border: 2px solid  rgba( 176, 224, 230, 1 );
+    border-radius: 100px;
+}
+
+a.button:hover{
+    background-color:  rgba( 176, 224, 230, 1 );
+    color: black;
+}
+
+body{
+    margin: 0;
+    font-family:'Roboto','Gill Sans', sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width: 500px){
+    body{
+      font-size: 14px;
+    }
+}
+
+.contenuto{  
+    width: 66.67vw;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: rgb(31, 31, 31);
+}
+
+.contenuto h1{
+    margin-top: auto;
+    margin-bottom: auto;  
+    font-size: 1.55em;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.contenuto h2{
+    margin-top: auto;
+    margin-bottom: 20px;      
+    font-size: 1.3em;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba( 119, 136, 153, 1 );
+}
+
+.contenuto p{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.film{
+    width: 66.67vw;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    display: flex;
+}
+
+footer{
+    background-color: rgb(31, 31, 31);
+    padding: 75px;
+    text-align: center;
+}
+  
+footer p{
+    color: rgba( 135, 206, 235, 1 );
+    text-align: center;
+    line-height: 150%;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+header{
+    color: rgba( 135, 206, 235, 1 );
+    background-image: url(https://images.unsplash.com/photo-1583024673717-4ede2b33fd71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2210&q=80);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+header h1{   
+    max-width: 780px;
+    font-size: 2.6em;
+    font-weight: 900;
+    text-align: center;
+    color: rgba( 176, 224, 230, 1 );
+    z-index: 3;
+}
+
+@media (max-width: 500px){
+    header h1{
+        text-align: center;
+    }
+}
+
+header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 0.8em;
+    color: rgba( 176, 224, 230, 1 );
+    padding: 20px; 
+    display: flex;
+    align-items: center;
+    background-color: rgba( 119, 136, 153, 0.75 );
+    z-index: 3;
+}
+
+#main{
+    width: 66.67vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#menu{
+    display: none;
+}
+  
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: rgba( 176, 224, 230, 1 );
+    margin: 5px;
+}
+
+@media (max-width: 500px){
+    #links{
+        display: none;
+    }    
+    #menu{
+        display: block;
+    }
+}
+
+
+#links a{
+    margin: 80px;
+    padding: 10px 15px;
+    border: 2px solid  rgba( 176, 224, 230, 1 );
+    border-radius: 100px;
+}
+
+
+.numero h1{
+    margin-top: auto;
+    margin-left: -40px;
+    margin-right: auto;
+    font-size: 1.55em;
+    font-weight: 700;
+    color:rgba( 135, 206, 235, 1 );
+}
+
+#overlay{
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+#player { 
+    margin-top: 10px;
+}
+
+#profile{
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;   
+    z-index: 3;
+}
+
+#profile p{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 2em;
+}
+
+#profile p em{
+    font-size:1.2em;
+    font-weight: 400;
+}
+
+#profile img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;   
+    background-color: rgba( 176, 224, 230, 1 ); 
+}
+
+.spazio120px{
+    height: 120px;
+}
+
+#spazio60px{
+    height: 60px;
+}
+
+
+
+
+
+#film-visualizzati {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+#film-visualizzati .film {
+    margin: 10px;
+    border: 1px solid slategray;
+    padding: 5px;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+  
+#film-visualizzati img {
+    max-width: 100%;
+}
+
+#ricerca{
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba( 176, 224, 230, 0.6);
+    padding: 10px;
+    
+}
+
+#ricerca h1{
+    line-height: 150%;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: auto;
+}
+
